@@ -1,0 +1,10 @@
+version: '1'
+services:
+  mcserver:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mcserver:latest
+    volumes:
+      - ./mcserver-world:/mcserver/world
+      - ./mcserver-backups:/mcserver/backups
