@@ -8,3 +8,5 @@ services:
     volumes:
       - ./mcserver-world:/mcserver/world
       - ./mcserver-backups:/mcserver/backups
+    ports:
+      - "25565:25565"
